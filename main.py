@@ -12,13 +12,17 @@
 # Сами функции реализовать не надо. Достаточно добавить туда какой-либо вывод.
 #
 # Познакомиться с модулем datetime. При вызове функций модуля main.py выводить текущую дату.
-# *4. Создать рядом с файлом main.py модуль dirty_main.py и импортировать все функции с помощью конструкции (необязательное задание)
+# *4. Создать рядом с файлом main.py модуль dirty_main.py и импортировать все функции с помощью конструкции(необязательное задание)
 #
 # from package import *
 
 
-from datetime import datetime, date, time
+from datetime import date
+from application import salary
+from application import people
 
-print(datetime.today())
+if __name__ == '__main__':
+    print(date.today())
+    salary.calculate_salary(1, 5)
+    people.get_employees()
 
-print(date.today())
